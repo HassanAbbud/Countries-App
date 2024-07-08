@@ -1,4 +1,4 @@
-<div>By Capital</div>
+<h2>By Capital</h2>
 
 <hr />
 
@@ -15,10 +15,6 @@
 <div class="row">
   <div class="col">
     <hr>
-    <ul>
-      <li *ngFor="let country of countries">
-        {{country.capital}} - {{country.population}}
-      </li>
-    </ul>
+    <countries-table [countries]="countries"></countries-table>
   </div>
 </div>
