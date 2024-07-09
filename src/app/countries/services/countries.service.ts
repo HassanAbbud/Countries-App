@@ -41,7 +41,7 @@ export class CountriesService {
   SearchRegion(query: string):  Observable<Country[]> {
     const url = `${this.apiUrl}/region/${query}`;
 
-    return this.http.get<Country[]>(url)
+    return this.http.get<Country[]>(url).pipe(delay(2000));
   }
 
 }
